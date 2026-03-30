@@ -13,16 +13,24 @@ export function TopBar() {
       </div>
 
       <div className="topbar-actions" aria-label="Quick actions">
-        <Link to="/approverejectmodel" className="topbar-link">
+        <Link to="/ApproveRejectModelPage" className="topbar-link">
           Moderate
         </Link>
-        <button type="button" className="icon-button" aria-label="Notifications">
+        <button
+          type="button"
+          className="icon-button"
+          aria-label="Notifications"
+        >
           <IconBell />
         </button>
-        <button type="button" className="icon-button icon-button--solid" aria-label="Profile">
+        <button
+          type="button"
+          className="icon-button icon-button--solid"
+          aria-label="Profile"
+        >
           <IconUser />
         </button>
       </div>
     </header>
-  )
+  );
 }

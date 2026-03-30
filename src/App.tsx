@@ -8,32 +8,38 @@ import AgentProfilePage from './pages/AgentProfilePage/AgentProfilePage'
 import ProfileSettingsPage from "./pages/ProfileSettingsPage/ProfileSettingsPage";
 import MyInquiriesPage from "./pages/MyInquiriesPage/MyInquiriesPage";
 import ListingViewsAnalytics from "./pages/ListingViewsAnalytics/ListingViewsAnalytics";
+import PropertyDraftsPage from "./pages/PropertyDrafts/PropertyDraftsPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/LandingPage" element={<LandingPage />} />
         <Route
-          path="/advancedsearchfilterpage"
+          path="/AdvancedSearchFilterPage"
           element={<AdvancedSearchFilterPage />}
         />
         <Route
-          path="/approverejectmodel"
+          path="/ApproveRejectModelPage"
           element={<ApproveRejectModelPage />}
         />
-        <Route path="/statuschangemodel" element={<StatusChangeModelPage />} />
-        <Route path="/usermanagementlist" element={<UserManagementList />} />
-        <Route path="/agentprofile" element={<AgentProfilePage />} />
-        <Route path="/profilesettings" element={<ProfileSettingsPage />} />
-        <Route path="/myinquiries" element={<MyInquiriesPage />} />
         <Route
-          path="/analytics/listing-views"
+          path="/StatusChangeModelPage"
+          element={<StatusChangeModelPage />}
+        />
+        <Route path="/UserManagementList" element={<UserManagementList />} />
+        <Route path="/AgentProfilePage" element={<AgentProfilePage />} />
+        <Route path="/ProfileSettingsPage" element={<ProfileSettingsPage />} />
+        <Route path="/MyInquiriesPage" element={<MyInquiriesPage />} />
+        <Route
+          path="/ListingViewsAnalytics"
           element={<ListingViewsAnalytics />}
         />
+        <Route path="/PropertyDrafts" element={<PropertyDraftsPage />} />
         <Route
           path="/propertymoderation"
-          element={<Navigate to="/approverejectmodel" replace />}
+          element={<Navigate to="/ApproveRejectModelPage" replace />}
         />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
