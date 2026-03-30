@@ -5,6 +5,9 @@ import { LandingPage } from './pages/LandingPage/LandingPage'
 import { StatusChangeModelPage } from './pages/StatusChangeModelPage/StatusChangeModelPage'
 import { UserManagementList } from './pages/UserManagementList/UserManagementList'
 import AgentProfilePage from './pages/AgentProfilePage/AgentProfilePage'
+import ProfileSettingsPage from "./pages/ProfileSettingsPage/ProfileSettingsPage";
+import MyInquiriesPage from "./pages/MyInquiriesPage/MyInquiriesPage";
+import ListingViewsAnalytics from "./pages/ListingViewsAnalytics/ListingViewsAnalytics";
 
 function App() {
   return (
@@ -22,6 +25,12 @@ function App() {
         <Route path="/statuschangemodel" element={<StatusChangeModelPage />} />
         <Route path="/usermanagementlist" element={<UserManagementList />} />
         <Route path="/agentprofile" element={<AgentProfilePage />} />
+        <Route path="/profilesettings" element={<ProfileSettingsPage />} />
+        <Route path="/myinquiries" element={<MyInquiriesPage />} />
+        <Route
+          path="/analytics/listing-views"
+          element={<ListingViewsAnalytics />}
+        />
         <Route
           path="/propertymoderation"
           element={<Navigate to="/approverejectmodel" replace />}

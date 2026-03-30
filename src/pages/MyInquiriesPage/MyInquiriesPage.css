@@ -1,0 +1,42 @@
+.inquiries-page{max-width:820px;margin:18px auto;padding-bottom:110px}
+.inq-header{display:flex;align-items:center;justify-content:space-between;padding:10px 4px}
+.inq-header h1{margin:0;font-size:20px}
+.inq-header .back i,
+.inq-header .search i{font-size:18px;color:#0b62d8}
+.inq-header .back{background:#fff;border-radius:6px;padding:6px 8px;border:1px solid rgba(11,38,86,0.08);box-shadow:0 4px 12px rgba(11,38,86,0.04)}
+.inq-tabs{display:flex;gap:20px;padding:12px 0;border-bottom:1px solid rgba(14,42,98,0.06)}
+.inq-tabs button{background:none;border:0;padding:8px 6px;color:#6b7280;font-weight:600}
+.inq-tabs button.active{color:#0b62d8;border-bottom:3px solid #0b62d8;padding-bottom:6px}
+.inq-list{margin-top:12px}
+.inq-card{display:flex;align-items:center;padding:16px;border-bottom:1px solid #f3f6fb;background:#fff;border-radius:8px;margin-bottom:12px;box-shadow:0 8px 20px rgba(14,42,98,0.03)}
+.inq-thumb{width:84px;height:84px;border-radius:8px;object-fit:cover;margin-right:14px}
+.inq-body{flex:1}
+.inq-top{display:flex;justify-content:space-between;align-items:center}
+.inq-title{font-weight:700}
+.badge{font-size:12px;padding:6px 8px;border-radius:12px}
+.badge-replied{background:#e6f0ff;color:#0b62d8}
+.badge-sent{background:#f1f5f9;color:#6b7280}
+.badge-closed{background:#fee2e2;color:#e11d48}
+.inq-meta-row{display:flex;justify-content:space-between;align-items:flex-start;margin-top:8px}
+.inq-agent{color:#6b7280;margin-top:0}
+.inq-address{color:#9ca3af;font-size:13px}
+.inq-subrow{display:flex;align-items:center;gap:12px;margin-top:8px}
+.inq-pill{background:#e6f0ff;color:#0b62d8;padding:6px 10px;border-radius:12px;font-weight:700;font-size:12px;box-shadow:0 6px 18px rgba(11,38,86,0.06)}
+.pill-replied{background:#e6f0ff;color:#0b62d8}
+.pill-sent{background:#f1f5f9;color:#6b7280}
+.pill-closed{background:#feecec;color:#e11d48}
+.inq-time-inline{color:#9ca3af;font-size:13px}
+.inq-action{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:110px}
+.inq-status-dot{width:10px;height:10px;border-radius:50%;background:#d1d9e6}
+.inq-status-dot.online{background:#00c853;box-shadow:0 0 0 4px rgba(0,200,83,0.08)}
+.inq-action-link a{color:#0b62d8}
+.inq-bottom-nav{position:fixed;left:0;right:0;bottom:0;max-width:980px;margin:0 auto;display:flex;justify-content:space-around;padding:12px 20px;background:rgba(255,255,255,0.98);border-top:1px solid rgba(14,42,98,0.06)}
+.inq-bottom-nav button{background:none;border:0;color:#6b7280;font-weight:600}
+.inq-bottom-nav .active{color:#0b62d8}
+
+@media (max-width:720px){
+	.inquiries-page{padding-left:12px;padding-right:12px}
+	.inq-thumb{width:66px;height:66px}
+	.inq-card{padding:12px}
+	.inq-bottom-nav{padding:10px}
+}

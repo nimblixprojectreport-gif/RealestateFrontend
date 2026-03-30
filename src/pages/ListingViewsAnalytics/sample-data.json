@@ -1,0 +1,21 @@
+{
+  "total": 24500,
+  "referralBreakdown": [
+    { "name": "Search", "value": 14700, "percent": 60, "delta": 8.2 },
+    { "name": "Social", "value": 6125, "percent": 25, "delta": 24.5 },
+    { "name": "Direct", "value": 3675, "percent": 15, "delta": -2.1 }
+  ],
+  "heatmapUrl": "/assets/images/LandingPage/Property/heatmap-placeholder.jpg",
+  "trafficList": [
+    { "name": "Google Search", "channel": "Organic", "value": 14700, "percent": 60, "delta": 8.2 },
+    { "name": "Instagram", "channel": "Social", "value": 6125, "percent": 25, "delta": 24.5 },
+    { "name": "Direct URL", "channel": "Direct", "value": 3675, "percent": 15, "delta": -2.1 },
+    { "name": "Facebook", "channel": "Social", "value": 2950, "percent": 12, "delta": 3.4 },
+    { "name": "Bing", "channel": "Organic", "value": 1200, "percent": 5, "delta": -1.2 },
+    { "name": "Referral Site A", "channel": "Referral", "value": 980, "percent": 4, "delta": 2.0 },
+    { "name": "Twitter", "channel": "Social", "value": 720, "percent": 3, "delta": 10.1 },
+    { "name": "Email Campaign", "channel": "Email", "value": 610, "percent": 2, "delta": 1.5 },
+    { "name": "Partner Portal", "channel": "Referral", "value": 420, "percent": 2, "delta": -0.5 },
+    { "name": "Other", "channel": "Other", "value": 340, "percent": 1, "delta": 0.0 }
+  ]
+}

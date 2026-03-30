@@ -1,0 +1,68 @@
+.lva-page{width:100%;max-width:1100px;margin:0 auto;padding:16px 12px;background:var(--bg,#f6f8fa);min-height:100vh;box-sizing:border-box}
+.lva-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lva-header h1{font-size:18px;margin:0}
+.lva-back,.lva-share{background:none;border:none;font-size:20px}
+.lva-tabs{display:flex;gap:12px;border-bottom:1px solid #e6edf3;padding-bottom:12px;margin-bottom:16px}
+.lva-tabs button{background:none;border:none;padding:8px 6px;color:#6b7280}
+.lva-tabs button.active{color:#0b5cff;border-bottom:3px solid #0b5cff}
+.lva-content{display:grid;grid-template-columns:1fr;gap:16px}
+.lva-card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 2px rgba(16,24,40,0.04);box-sizing:border-box}
+.lva-card h3{margin:0 0 8px 0;font-size:14px}
+.lva-legend{display:flex;flex-direction:column;gap:8px}
+.traffic-list-item{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-top:1px solid #f1f5f9}
+.traffic-list-item:first-child{border-top:0}
+.delta-positive{color:#16a34a}
+.delta-negative{color:#6b7280}
+
+/* Tablet */
+@media (min-width: 600px) {
+	.lva-page{padding:20px}
+	.lva-header h1{font-size:20px}
+	.lva-tabs button{padding:10px 6px}
+}
+
+/* Desktop: two-column grid with heatmap on the right */
+@media (min-width: 900px) {
+	.lva-content{grid-template-columns:1fr 360px;grid-template-areas:"referral heatmap" "traffic heatmap";align-items:start}
+	.lva-content > .lva-card:nth-child(1){grid-area:referral}
+	.lva-content > .lva-card:nth-child(2){grid-area:heatmap}
+	.lva-content > .lva-card:nth-child(3){grid-area:traffic}
+	.lva-card{padding:20px}
+}
+
+/* Large desktop: wider layout */
+@media (min-width: 1200px) {
+	.lva-page{padding:28px}
+}
+
+/* make svg and images responsive within cards */
+.lva-card img, .lva-card svg{max-width:100%;height:auto;display:block}
+
+/* improve tabs look + touch target */
+.lva-tabs button{border-radius:8px;padding:8px 12px;background:transparent;cursor:pointer}
+.lva-tabs button:hover{background:rgba(11,92,255,0.06)}
+.lva-tabs button.active{background:linear-gradient(180deg,#eef5ff,#ecf6ff);box-shadow:0 1px 0 rgba(11,92,255,0.08);color:#0b5cff}
+
+/* ensure cards don't overflow and content wraps */
+.lva-card{min-width:0}
+.lva-card .lva-legend{max-height:60vh;overflow:auto}
+
+/* Interaction heatmap constraints */
+.lva-card img{max-height:420px;object-fit:cover}
+
+/* Engagement card responsive tweaks */
+@media (max-width:599px){
+	.lva-card > div{flex-direction:column}
+	.lva-card > div > div{width:100%}
+}
+
+/* Desktop: make content layout denser and adaptive */
+@media (min-width:900px){
+	.lva-content{grid-template-columns:1fr 360px;grid-auto-flow:dense;gap:20px}
+	.lva-content > .lva-card{width:100%}
+}
+
+/* Ensure demographics bars are full width on small screens */
+@media (max-width:700px){
+	.lva-legend > div{gap:6px}
+}
